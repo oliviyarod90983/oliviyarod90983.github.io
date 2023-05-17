@@ -1,0 +1,144 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="myStyle.css">
+      
+    </head>
+        
+            
+
+     
+            
+        
+
+    <html>
+      <head>
+        <link rel="stylesheet" href="myStyle.css">
+      </head>
+      
+      <body style="margin: 5; padding: 3; font-size: large; ">
+        
+        <a href="index.html">Home</a>
+        <a href="page1.html">Disney Movies</a>
+        <a href="page2.html">Music Artists</a>
+        <a href="page3.html">Animals</a>
+        <a href="page4.html">Game</a>
+      
+        <style>
+<style>
+  a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin value as desired */
+    font-size: 16px; /* Change the font size to 18 pixels */
+    /* Add any additional styling as desired */
+  }
+</style>
+
+        </style>
+      </body>
+      
+      </html>
+      
+
+      </style>
+    </body>
+
+        <h2>Press start to begin!</h2>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+          
+          <link rel="stylesheet" href="myStyle.css">
+          <title>Guessing Game</title>
+          <style>
+            
+    /* Style the image */
+    img {
+      max-width: 200px; /* Set the maximum width of the image */
+      transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+
+    /* Apply the transformation on hover */
+    img:hover {
+      transform: scale(1.1); /* Increase the scale of the image */
+    }
+            body {
+              background-color:lightsteelblue ;
+              color:black;
+              text-align: center;
+              font-size: larger;
+              
+              
+              padding: 10px;
+            }
+            
+            h2 {
+              color:black;
+            }
+            
+            a {
+              color: black;
+              text-decoration: none;
+              margin: px;
+            }
+            
+            button {
+              background-color:white;
+              color:black;
+              border: none;
+              padding: 10px 20px;
+              font-size: 14px;
+              cursor: pointer;
+            }
+            
+            button:hover {
+              background-color:lavenderblush;
+            }
+          </style>
+          <script>
+            // JavaScript code goes here
+            // Generate a random number between 1 and 10
+            const randomNumber = Math.floor(Math.random() * 10) + 1;
+        
+            // Initialize the number of guesses
+            let numberOfGuesses = 0;
+        
+            // Function to start the game
+            function startGame() {
+              const guess = parseInt(prompt("Guess a number between 1 and 10:"));
+        
+              // Check if the guess is valid
+              if (isNaN(guess) || guess < 1 || guess > 10) {
+                alert("Please enter a valid number between 1 and 10.");
+                return;
+              }
+        
+              // Increment the number of guesses
+              numberOfGuesses++;
+        
+              // Check if the guess is correct
+              if (guess === randomNumber) {
+                alert(`Congratulations! You guessed the correct number in ${numberOfGuesses} ${numberOfGuesses === 1 ? 'guess' : 'guesses'}.`);
+              } else {
+                // Provide feedback to the player
+                const message = guess > randomNumber ? "Too high! Try again." : "Too low! Try again.";
+                alert(message);
+                startGame(); // Recursive call to continue the game
+              }
+            }
+          </script>
+        </head>
+        <body>
+          <h1>Guessing Game</h1>
+          <button onclick="startGame()">Start</button>
+          
+          <p>Can you guess the correct number?</p>
+        </body>
+        </html>
+        
+</body>
+</html>
+<a href="" >
+  <img src="number.png" alt="Guess the right number!!": title="Guess the right number!!"
+</a>
